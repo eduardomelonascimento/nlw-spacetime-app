@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${roboto.variable} font-sans ${baiJamjuree.variable} bg-gray-900 text-gray-100`}
+        className={`${roboto.variable} font-sans ${baiJamjuree.variable} scroll- bg-gray-900 text-gray-100`}
       >
         <main className="grid min-h-screen grid-cols-2">
           <div className='relative flex flex-col items-start justify-between overflow-x-hidden border-r border-white/10 bg-[url("../assets/bg-stars.svg")] bg-cover px-28 py-16'>
@@ -42,7 +42,7 @@ export default function RootLayout({
             <Hero />
             <Footer />
           </div>
-          <div className='flex flex-col bg-[url("../assets/bg-stars.svg")] bg-cover p-16'>
+          <div className='flex h-screen flex-col overflow-auto bg-[url("../assets/bg-stars.svg")] bg-cover'>
             {children}
           </div>
         </main>
